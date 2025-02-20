@@ -1,69 +1,23 @@
 # Nexus Testnet II CLI Stable
 
-- Buy VPS di : [t.me/skuycloud](t.me/skuycloud)
-- Trakteer buat buy Kopi : https://trakteer.id/brrrskuy/tip `<---`
+# GAUSA NANYA, IKUTIN WAE
 
-# Install Build Essential
+# 1
 ```
-sudo apt install build-essential pkg-config libssl-dev git-all -y
+wget https://raw.githubusercontent.com/isrealllairdrop/Nexus-Testnet-II/refs/heads/main/irnexus.sh
 ```
-# Install Protobuf Compiler
+# 2
 ```
-sudo apt install -y protobuf-compiler
+chmod +x irnexus.sh && sed -i 's/\r$//' irnexus.sh
+./irnexus.sh
 ```
-# Install Rust
-```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-```
-source $HOME/.cargo/env
-```
-# Add the `riscv32i` target
-```
-rustup target add riscv32i-unknown-none-elf
-```
-# Install Unzip
-```
-apt install unzip
-```
-# Install Protoc v21.3
-```
-wget https://github.com/protocolbuffers/protobuf/releases/download/v21.3/protoc-21.3-linux-x86_64.zip
-```
-# Extract File Protoc Zip
-```
-unzip protoc-21.3-linux-x86_64.zip -d /usr/local
-```
-# Add Overswap 16GB 
-`run one per line`
-```
-sudo swapoff -a  
-```
-```
-sudo fallocate -l 16G /swapfile
-```
-```
-sudo chmod 600 /swapfile
-```
-```
-sudo mkswap /swapfile
-```
-```
-sudo swapon /swapfile
-```
-# Add Overcommit Memory
-```
-sudo sysctl -w vm.overcommit_memory=1
-```
-`add permanent overcommit`
-```
-echo 'vm.overcommit_memory=1' | sudo tee -a /etc/sysctl.conf
-```
-# Add Screen
+
+# 3
 ```
 screen -S nexus
 ```
-# Run Script 
+
+# 4
 ```
 curl https://cli.nexus.xyz/ | sh
 ```
