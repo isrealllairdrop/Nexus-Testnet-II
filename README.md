@@ -15,6 +15,9 @@ sudo apt install -y protobuf-compiler
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+```
+source $HOME/.cargo/env
+```
 # Add the `riscv32i` target
 ```
 rustup target add riscv32i-unknown-none-elf
@@ -30,9 +33,6 @@ wget https://github.com/protocolbuffers/protobuf/releases/download/v21.3/protoc-
 # Extract File Protoc Zip
 ```
 unzip protoc-21.3-linux-x86_64.zip -d /usr/local
-```
-```
-source $HOME/.cargo/env
 ```
 # Add Overswap 16GB 
 `run one per line`
